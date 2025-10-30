@@ -16,9 +16,9 @@ Once you have all the raw files, you can decrypt them into images. I recommend a
 After updating one image, we will get a new image with ????_NEW.RAW. We will need to update the original ????.RAW file with this if we want to generate again the resource file.
 
 For example, we want to update image 0 of RES9 (of Strahd's, but this does not matter because this works the same in both games):  
-> loftres -e RES9    (export all the files)
-> loftres -d 0000.RAW:4  (decrypt 0000.RAW to 0000.TGA using palette 4)
-> We modify 0000.TGA with some graphic tool like Gimp. PLEASE, THE IMAGE MUST BE COLOR INDEXED.
-> loftres -r 0000.TGA  (convert 0000.TGA to 0000_NEW.RAW)
-> copy 0000_NEW.RAW 0000.RAW   (copy the new file with the needed name for generating the new resource file)
-> loftres -g RES9    (this will create RES9_NEW that we will be able to use in the game)
+> **"C:\loftres -e RES9"**    (export all the files)  
+> **"C:\loftres -d 0000.RAW:4"**  (decrypt 0000.RAW to 0000.TGA using palette 4)  
+> We modify 0000.TGA with some graphic tool like Gimp. PLEASE, THE IMAGE MUST BE COLOR INDEXED.  
+> **"C:\loftres -r 0000.TGA"**  (convert 0000.TGA to 0000_NEW.RAW)  
+> **"C:\copy 0000_NEW.RAW 0000.RAW"**   (copy the new file with the needed name for generating the new resource file)  
+> **"C:\loftres -g RES9"**    (this will create RES9_NEW that we will be able to use in the game)  
