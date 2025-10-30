@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LoftRES": {
+      "commandName": "Project",
+      "commandLineArgs": "-d 0227_NEW.RAW"
+    }
+  }
+}
