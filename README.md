@@ -1,11 +1,11 @@
 # LoftRES
 
-Ok, maybe this is the most interesting tool for Ravenloft: Strahd's Possession and Ravenloft: Stone Prophet videogames.  
+Ok, maybe this is the most interesting tool for Ravenloft: Strahd's Possession, Ravenloft: Stone Prophet videogames and Menzoberranzan.  
 With this tool you can extract/generate resource (RES??) raw files AND you can decrypt/convert, that raw files into .TGA indexed files and viceversa.  
 Apart of the .RAW files (the images or other files like voices), you will have ONE RES.TXT file with the list of that images. You will need this for generate again the resource file.
 The new converted raw image will be inserted in the RES?? file WITHOUT compression.
 
-<img width="963" height="760" alt="imagen" src="https://github.com/user-attachments/assets/e8d1d5a6-a248-4c22-a9bd-8ab0337ec483" />
+<img width="989" height="643" alt="imagen" src="https://github.com/user-attachments/assets/0ab40ec5-3a75-4f7b-aa1f-33469223fc2e" />
 
 The first time you use this tool, for extract, you will get a bunch of files.  
 Normally, the first raw files of RES0 (first 14 for Strahd and first 11 for Stone) are the FONTs of the game.  
