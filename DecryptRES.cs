@@ -494,7 +494,7 @@ namespace LoftRES
                     else
                     {
                         writerTGA.Write(
-                            (ushort)8);       // width
+                            (ushort)(8 * resourceRAW.fontDesc.field_4));       // width
                         writerTGA.Write(
                             (ushort)(resourceRAW.fontDesc.width * resourceRAW.fontDesc.height));
                     }
@@ -538,7 +538,7 @@ namespace LoftRES
                 }                    
                 else
                 {                    
-                    h = 8;
+                    h = 8 * resourceRAW.fontDesc.field_4;
                 }                    
 
                 resourceRAW.fontDesc.DecryptedData = Reverse(resourceRAW.fontDesc.DecryptedData,
@@ -694,11 +694,12 @@ namespace LoftRES
                 //                                    12 14 14 12
 
                 resourceRAW.fontDesc.DecryptedData = new byte[resourceRAW.fontDesc.width *
-                                                              resourceRAW.fontDesc.height * 8];
+                                                              resourceRAW.fontDesc.height * 
+                                                              8 * resourceRAW.fontDesc.field_4];
 
                 // Now let's put the data. It begins normally at 0x2CA
                 w = resourceRAW.fontDesc.width * resourceRAW.fontDesc.height;
-                h = 8;
+                h = 8 * resourceRAW.fontDesc.field_4;
 
                 readerTGA.BaseStream.Position = 0x312;
 
@@ -906,7 +907,7 @@ namespace LoftRES
             Console.WriteLine("    compressionAlgo : " + resourceRAW.fontDesc.compressionAlgo.ToString());
             Console.WriteLine("    field_7         : " + resourceRAW.fontDesc.field_7.ToString());
 
-            outputSize = resourceRAW.fontDesc.width * resourceRAW.fontDesc.height * 8;
+            outputSize = resourceRAW.fontDesc.width * resourceRAW.fontDesc.height * (8 * resourceRAW.fontDesc.field_4);
             Console.WriteLine("\n    output size     : " + outputSize.ToString());
 
             resourceRAW.fontDesc.DecryptedData = new byte[outputSize];
