@@ -24,8 +24,8 @@ namespace LoftRES
 
         static void PrintHelp()
         {
-            Console.WriteLine("Ravenloft: Strahd's Possesions & Ravenloft: Stone Prophet");
-            Console.WriteLine("RES Exporter/Generator v1.0");
+            Console.WriteLine("Ravenloft: Strahd's Possesions, Ravenloft: Stone Prophet");
+            Console.WriteLine("and Menzoberranzan... RES Exporter/Generator v1.1");
             Console.WriteLine("=========================================================");
             Console.WriteLine("");
             Console.WriteLine("Usage:");
