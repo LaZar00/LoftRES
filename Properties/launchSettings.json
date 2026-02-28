@@ -2,7 +2,7 @@
   "profiles": {
     "LoftRES": {
       "commandName": "Project",
-      "commandLineArgs": "-d 0227_NEW.RAW"
+      "commandLineArgs": "-d 0010.RAW:0"
     }
   }
 }
